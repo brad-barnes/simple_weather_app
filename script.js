@@ -70,7 +70,7 @@ const getWeather = async (zip = 75201) => {
 
     const zip = zipcode.value;
 
-    const weather = await fetch(`http://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=3524d14183f1e4f524309ee84cce6e9c`);
+    const weather = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=3524d14183f1e4f524309ee84cce6e9c`);
 
     const data = await weather.json();
 
