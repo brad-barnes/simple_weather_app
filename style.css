@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+  }
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+#buttonGroup {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+#zipcode {
+    width: 50%;
+}
+
+#zipGroup {
+    justify-self: center;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 16px;
+
+}
+
+/* 
+#display {
+    
+    max-width: 1000px;
+} */
+
+#errorMessage {
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    #buttonGroup {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    #zipcode {
+        margin: 0 auto;
+        margin-bottom: -25px;
+    }
+    #zipLabel { 
+       
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    
+}
+
+/* @media only screen and (max-width: 350) {
+    #heading {
+        font-size: 1rem;
+    }
+} */
