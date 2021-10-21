@@ -77,7 +77,7 @@ const getWeather = async (zip = 75201) => {
 
     const data = await weather.json();
 
-    const stateFromZip = await fetch(`http://ZiptasticAPI.com/${zip}`);
+    const stateFromZip = await fetch(`https://ZiptasticAPI.com/${zip}`);
     const stateData = await stateFromZip.json();
 
     if (!weather.ok) {
